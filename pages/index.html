@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="/register" method="post">
+        <div class="container">
+          <h1 class="r">Register</h1>
+          <p class="r">Please fill in this form to create an account.</p>
+          
+          
+          <label for="psw-repeat"><b>Name</b></label>
+          <input type="name" placeholder="Enter your Name" name="psw-repeat" id="psw-repeat" required class="rp">
+          <br>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" id="email" required class="rp">
+          <br>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="psw" required class="rp">
+      
+      
+        
+         <div class="rb"> <button type="submit" class="registerbtn">Register</button></div>
+        </div>
+      
+        <div class="container signin p">
+          <p>Already have an account? <a href="#">Sign in</a>.</p>
+        </div>
+      </form>
+
+      <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images.pexels.com/photos/1024967/pexels-photo-1024967.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+form{
+    border: 1px solid black;
+    height: 60vh;
+    background: #fff;
+    padding: 10px;
+}
+
+.r{
+    text-align: center;
+    padding: 5px;
+}
+
+.p{
+    text-align: center;
+    margin-top: 100px;
+    color: #fff;
+}
+
+.rp{
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+}
+.rb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.rb button{
+  padding: 5px;
+  border-radius: 5px;
+}
+      </style>
+</body>
+</html>
